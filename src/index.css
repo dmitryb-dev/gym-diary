@@ -1,0 +1,60 @@
+body {
+  text-align: right;
+  padding-bottom: 70px;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  min-width: 50px;
+  height: 20px;
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: white;
+  box-shadow: 0 1px 0 0 black;
+}
+
+table tr td:first-child {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 2;
+  box-shadow: 0 0 1px 0 black;
+}
+
+.group {
+  font-weight: bold;
+  background: #ded7d7;
+}
+
+.action {
+  min-width: 95vw;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.timer {
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0 0 5px;
+  width: 100vw;
+  z-index: 5;
+  background: #ded7d7;
+}
